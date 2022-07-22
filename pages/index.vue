@@ -1,5 +1,15 @@
 <template>
-  <Tutorial />
+  <div>
+    <header>
+      <NotesCount />
+    </header>
+    <main>
+      <NotesTable />
+    </main>
+    <footer>
+      <NotesWarning />
+    </footer>
+  </div>
 </template>
 
 <script>
