@@ -23,7 +23,9 @@ Good luck!
 Full Stack Web Developer - Homework
 Design:
 Example JSON response:
-{ {
+
+```
+{{
 "id": 1,
 "title": "delectus aut autem", "content": "Lorem ipsum", "status": "New"
 }, {
@@ -33,7 +35,9 @@ Example JSON response:
 }, {
 "id": 3,
 "title": "fugiat veniam minus", "content": "Lorem ipsum", "status": "Not completed"
-} }
+}}
+```
+
 Copyright © 2022 WithSecure Corporation. All rights reserved.
 2 / 2
 
