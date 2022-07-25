@@ -20,7 +20,7 @@ app.get('/notes', async (req, res) => {
 
 app.post(`/note`, async (req, res) => {
   const { title, content, status } = req.body
-  const result = await prisma.post
+  const result = await prisma.note
     .create({
       data: {
         title,
