@@ -28,24 +28,23 @@ export default {
       note: {},
     }
   },
-  methods: {
-    async createNote() {
-      if (!this.title.length || !this.content.length) return
-      const { title, content } = this
-      const notesResult = await this.$store.dispatch('createNote', {
-        title,
-        content,
-      })
-      this.note = notesResult
-      await this.$store.dispatch('fetchNotes')
-      this.title = ''
-      this.content = ''
-    },
-  },
-
   computed: {
     counter() {
       return this.$store.state.counter
+    },
+  },
+  methods: {
+    async createNote() {
+      if (!this.title.length || !this.content.length) return // show modal you need a title and some content to create a note!
+
+      const { title, content } = this
+      await this.$store.dispatch('createNote', {
+        title,
+        content,
+      })
+
+      this.title = ''
+      this.content = ''
     },
   },
 }
